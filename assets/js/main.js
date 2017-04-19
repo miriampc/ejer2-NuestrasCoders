@@ -10,19 +10,21 @@ window.addEventListener('load',function(){
   var titulo=document.createElement('h3');
   titulo.appendChild(document.createTextNode("Nuestras Coders"));
 
-  
+  var raya=document.createElement('div');
+  raya.setAttribute('class','js-raya');
 
   contenedor.appendChild(titulo);
+  contenedor.appendChild(raya);
 
   coders.forEach(function(e,id){
     var figure=document.createElement('figure');
     var image=document.createElement('img');
     var span=document.createElement('span');
 
-    figure.setAttribute("class","js-figure");
+    figure.classList.add("class","js-figure");
     image.setAttribute("alt",e.name);
     image.src=e.src+id+".jpg";
-    span.setAttribute("class",'js-nombre');
+    span.classList.add("class",'js-nombre');
 
     span.appendChild(document.createTextNode(e.name));
     figure.appendChild(image);
