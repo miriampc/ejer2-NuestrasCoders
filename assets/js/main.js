@@ -10,6 +10,8 @@ window.addEventListener('load',function(){
   var titulo=document.createElement('h3');
   titulo.appendChild(document.createTextNode("Nuestras Coders"));
 
+  
+
   contenedor.appendChild(titulo);
 
   coders.forEach(function(e,id){
@@ -20,6 +22,7 @@ window.addEventListener('load',function(){
     figure.setAttribute("class","js-figure");
     image.setAttribute("alt",e.name);
     image.src=e.src+id+".jpg";
+    span.setAttribute("class",'js-nombre');
 
     span.appendChild(document.createTextNode(e.name));
     figure.appendChild(image);

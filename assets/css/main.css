@@ -1,0 +1,30 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+#contenedor{
+  width: 60%;
+  margin: 50px auto;
+  padding: 0;
+}
+
+.js-figure{
+  display: inline-block;
+  margin: 21px 14px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.js-figure img{
+  width: 200px;
+  height: 200px;
+}
+
+.js-nombre{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color:#fff;
+}
